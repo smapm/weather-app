@@ -5,8 +5,10 @@ const app = express();
 const forecast = require('./utils/forecast');
 const geocode = require('./utils/geocoding');
 
-app.listen(3000, () => {
-    console.log('server up and running!');
+const port = process.env.PORT || 3000
+
+app.listen(port, () => {
+    console.log(`server up and running! ${port}`);
 });
 
 const rootdir = path.join(__dirname, '../public');

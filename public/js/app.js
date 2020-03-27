@@ -7,7 +7,7 @@ const search = document.querySelector('form').addEventListener('submit', (e) => 
     e.preventDefault();
     p1.textContent = 'loading ...';
     p2.textContent = '';
-    fetch(`http://localhost:3000/weather?address=${input.value}`).then(res => {
+    fetch(`/weather?address=${input.value}`).then(res => {
         res.json().then((data) => {
             if (data.error) {
                 p1.textContent = data.error
