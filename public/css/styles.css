@@ -45,3 +45,8 @@ button {
     border: 1px solid #666666;
     color: white;
 }
+.about {
+    color: #007791;
+    font-style: italic;
+    font-stretch: extra-expanded;
+}
