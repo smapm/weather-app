@@ -11,7 +11,7 @@ const forecast = (latitude, longitude, callback) =>{
         }else{
             const data = response.body.currently;
             const daily = response.body.daily.data[0];
-            callback(undefined,`${daily.summary} The high today is ${daily.temperatureHigh}ºC and low is ${daily.temperatureLow}ºC. It is currently ${data.temperature}ºC and ${data.precipProbability}% chance of rain`);
+            callback(undefined,`${daily.summary}! The high today is ${daily.temperatureHigh}ºC and low is ${daily.temperatureLow}ºC.! It is currently ${data.temperature}ºC and ${data.precipProbability}% chance of rain!`);
         }   
     });
 };

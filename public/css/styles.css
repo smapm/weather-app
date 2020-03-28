@@ -50,3 +50,7 @@ button {
     font-style: italic;
     font-stretch: extra-expanded;
 }
+.date{
+    font-family: roboto;
+    color: gray;
+}
